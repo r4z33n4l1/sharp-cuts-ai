@@ -5,8 +5,7 @@ export function AgentCard({ agent }: { agent: Agent }) {
   const Icon = agent.icon
   return (
     <article
-      tabIndex={0}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-char/70 p-6 transition focus-within:border-brass/60 hover:border-brass/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-char/70 p-6 transition hover:border-brass/40 has-[:focus-visible]:border-brass/60 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brass"
     >
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brass/0 via-brass/0 to-brass/10 opacity-0 transition group-hover:opacity-100" />
       <div className="relative flex items-start justify-between">
