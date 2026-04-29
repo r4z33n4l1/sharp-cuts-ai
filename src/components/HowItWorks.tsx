@@ -33,13 +33,13 @@ export function HowItWorks() {
   return (
     <section
       id="how"
-      className="relative border-y border-brass-300/10 bg-ink-900/60 py-24 md:py-32"
+      className="relative border-y border-brass/10 bg-char/60 py-24 md:py-32"
     >
       <div className="container-x">
         <div className="text-center mb-16">
           <p className="eyebrow">// how it works</p>
-          <h2 className="display mt-3 text-4xl md:text-5xl text-brass-50">
-            Three steps. <span className="text-brass-300">Zero friction.</span>
+          <h2 className="display mt-3 text-4xl md:text-5xl text-bone">
+            Three steps. <span className="text-brass">Zero friction.</span>
           </h2>
         </div>
 
@@ -49,7 +49,7 @@ export function HowItWorks() {
             aria-hidden="true"
             className="pointer-events-none absolute left-0 right-0 top-7 hidden md:block"
           >
-            <div className="mx-[12.5%] h-px bg-gradient-to-r from-transparent via-brass-300/40 to-transparent" />
+            <div className="mx-[12.5%] h-px bg-gradient-to-r from-transparent via-brass/40 to-transparent" />
           </div>
 
           {steps.map((step) => {
@@ -57,17 +57,17 @@ export function HowItWorks() {
             return (
               <li key={step.n} className="relative">
                 <div className="flex md:flex-col items-start md:items-center text-left md:text-center gap-5 md:gap-6">
-                  <span className="relative grid h-14 w-14 shrink-0 place-items-center rounded-full border border-brass-300/40 bg-ink-950 text-brass-200">
+                  <span className="relative grid h-14 w-14 shrink-0 place-items-center rounded-full border border-brass/40 bg-ink text-brass">
                     <Icon className="h-5 w-5" />
-                    <span className="absolute -top-2 -right-2 inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-brass-300 px-1.5 font-mono text-[0.65rem] text-ink-950">
+                    <span className="absolute -top-2 -right-2 inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-brass px-1.5 font-mono text-[0.65rem] text-ink">
                       {step.n}
                     </span>
                   </span>
                   <div>
-                    <h3 className="display text-xl text-brass-50">
+                    <h3 className="display text-xl text-bone">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-brass-50/70 md:max-w-xs md:mx-auto">
+                    <p className="mt-2 text-sm leading-relaxed text-bone/70 md:max-w-xs md:mx-auto">
                       {step.body}
                     </p>
                   </div>

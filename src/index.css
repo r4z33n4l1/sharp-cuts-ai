@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  @apply bg-ink-950 text-brass-50 font-sans antialiased selection:bg-brass-300 selection:text-ink-950;
+  @apply bg-ink text-bone font-sans antialiased selection:bg-brass selection:text-ink;
   font-feature-settings: 'ss01', 'cv01', 'cv11';
 }
 
@@ -23,7 +23,7 @@ body {
   }
 
   .eyebrow {
-    @apply font-mono text-[0.7rem] uppercase tracking-[0.32em] text-brass-200/80;
+    @apply font-mono text-[0.7rem] uppercase tracking-[0.32em] text-brass/80;
   }
 
   .display {
@@ -35,21 +35,21 @@ body {
   }
 
   .btn-primary {
-    @apply btn bg-brass-300 text-ink-950 hover:bg-brass-200 shadow-[0_8px_30px_-10px_rgba(214,173,79,0.6)];
+    @apply btn bg-brass text-ink hover:bg-brass/90 shadow-[0_8px_30px_-10px_rgba(201,169,110,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
   }
 
   .btn-ghost {
-    @apply btn border border-brass-300/30 text-brass-100 hover:border-brass-300/60 hover:text-brass-50;
+    @apply btn border border-brass/30 text-bone hover:border-brass/60 hover:bg-char focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
   }
 
   .barber-rule {
     background-image: repeating-linear-gradient(
       45deg,
-      #d23a3a 0 8px,
-      #f5e3b0 8px 16px,
-      #0d0c10 16px 24px
+      #D23A3A 0 8px,
+      #F5F1E8 8px 16px,
+      #0B0B0C 16px 24px
     );
-    background-size: 100% 100%;
+    background-size: 200% 100%;
   }
 }
 
